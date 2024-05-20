@@ -1,0 +1,16 @@
+requests
+stem
+beautifulsoup4
+psycopg2
+sqlalchemy
+pyyaml
+flask
+python-dotenv
+prometheus-client
+fake-useragent
+redis
+nltk
+pillow
+slack_sdk
+schedule
+scikit-learn

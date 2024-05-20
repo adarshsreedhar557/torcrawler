@@ -1,0 +1,27 @@
+tor:
+  renewal_interval: 600  # IP renewal interval in seconds
+
+request:
+  timeout: 30  # Request timeout in seconds
+  delay: 5     # Delay between requests in seconds
+  rate_limit: 10  # Maximum number of requests per minute
+
+crawler:
+  num_threads: 10  # Number of concurrent threads
+  max_depth: 3  # Maximum depth for crawling
+  cache_enabled: true  # Enable or disable caching
+  auth_required: false  # Enable or disable authentication
+
+start_urls:
+  - 'http://exampleonion.onion'  # Add your initial .onion URLs here
+
+data_export:
+  formats: ['csv', 'json', 'xml', 'parquet']  # Data export formats
+
+web:
+  host: '127.0.0.1'
+  port: 5000
+
+notifications:
+  enabled: true  # Enable or disable notifications
+  slack_channel: '#crawler-alerts'  # Slack channel for notifications
